@@ -18,8 +18,8 @@ return require('packer').startup(function(use)
         'nvim-lualine/lualine.nvim',
         requires = {'nvim-tree/nvim-web-devicons', opt = true}
     }
-    use { 'Mofiqul/dracula.nvim' }                     -- colorschem
-      use {
+    use { 'Mofiqul/dracula.nvim' }                     -- colorscheme
+    use {
     'nvim-telescope/telescope.nvim',                   -- fuzzy finder
     requires = { {'nvim-lua/plenary.nvim'} }
   }
