@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/peter/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/peter/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/peter/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/peter/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/peter/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "C:\\Users\\peter.a\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?.lua;C:\\Users\\peter.a\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\peter.a\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\peter.a\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
+local install_cpath_pattern = "C:\\Users\\peter.a\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\lua\\5.1\\?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,97 +76,97 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   LuaSnip = {
     loaded = true,
-    path = "/home/peter/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    path = "C:\\Users\\peter.a\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["beacon.nvim"] = {
     loaded = true,
-    path = "/home/peter/.local/share/nvim/site/pack/packer/start/beacon.nvim",
+    path = "C:\\Users\\peter.a\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\beacon.nvim",
     url = "https://github.com/DanilaMihailov/beacon.nvim"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/home/peter/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    path = "C:\\Users\\peter.a\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   cmp_luasnip = {
     loaded = true,
-    path = "/home/peter/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    path = "C:\\Users\\peter.a\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["dracula.nvim"] = {
     loaded = true,
-    path = "/home/peter/.local/share/nvim/site/pack/packer/start/dracula.nvim",
+    path = "C:\\Users\\peter.a\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dracula.nvim",
     url = "https://github.com/Mofiqul/dracula.nvim"
   },
   ["gv.vim"] = {
     loaded = true,
-    path = "/home/peter/.local/share/nvim/site/pack/packer/start/gv.vim",
+    path = "C:\\Users\\peter.a\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gv.vim",
     url = "https://github.com/junegunn/gv.vim"
   },
   indentLine = {
     loaded = true,
-    path = "/home/peter/.local/share/nvim/site/pack/packer/start/indentLine",
+    path = "C:\\Users\\peter.a\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indentLine",
     url = "https://github.com/Yggdroot/indentLine"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/peter/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    path = "C:\\Users\\peter.a\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
-    path = "/home/peter/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    path = "C:\\Users\\peter.a\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/home/peter/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    path = "C:\\Users\\peter.a\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/peter/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "C:\\Users\\peter.a\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
-    path = "/home/peter/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    path = "C:\\Users\\peter.a\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/peter/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "C:\\Users\\peter.a\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/peter/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "C:\\Users\\peter.a\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/peter/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "C:\\Users\\peter.a\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["rust-tools.nvim"] = {
     loaded = true,
-    path = "/home/peter/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
+    path = "C:\\Users\\peter.a\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rust-tools.nvim",
     url = "https://github.com/simrat39/rust-tools.nvim"
   },
   tagbar = {
     loaded = true,
-    path = "/home/peter/.local/share/nvim/site/pack/packer/start/tagbar",
+    path = "C:\\Users\\peter.a\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tagbar",
     url = "https://github.com/preservim/tagbar"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/peter/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "C:\\Users\\peter.a\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-fugitive"] = {
     loaded = true,
-    path = "/home/peter/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    path = "C:\\Users\\peter.a\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   }
 }

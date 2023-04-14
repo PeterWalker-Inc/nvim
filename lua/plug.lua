@@ -13,12 +13,14 @@ return require('packer').startup(function(use)
         'nvim-tree/nvim-tree.lua',                     -- File system navigation
         requires = 'nvim-tree/nvim-web-devicons'       -- filesystem icons
     }
-    use { 'DanilaMihailov/beacon.nvim' }               -- cursor jump
+    use 'DanilaMihailov/beacon.nvim'                   -- cursor jump
     use {                                              -- status line 
         'nvim-lualine/lualine.nvim',
         requires = {'nvim-tree/nvim-web-devicons', opt = true}
     }
-    use { 'Mofiqul/dracula.nvim' }                     -- colorscheme
+    use 'navarasu/onedark.nvim'                        -- Atom One Dark colorscheme
+    use 'Mofiqul/adwaita.nvim'                         -- Adwaita colorscheme
+    use 'Mofiqul/dracula.nvim'                         -- colorscheme
     use {
     'nvim-telescope/telescope.nvim',                   -- fuzzy finder
     requires = { {'nvim-lua/plenary.nvim'} }
