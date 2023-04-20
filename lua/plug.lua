@@ -13,6 +13,13 @@ return require('packer').startup(function(use)
         'nvim-tree/nvim-tree.lua',                     -- File system navigation
         requires = 'nvim-tree/nvim-web-devicons'       -- filesystem icons
     }
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = function()
+            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+            ts_update()
+        end,
+    }
     use 'DanilaMihailov/beacon.nvim'                   -- cursor jump
     use {                                              -- status line 
         'nvim-lualine/lualine.nvim',

@@ -13,7 +13,7 @@ require('lsp')            -- LSP file
 -- Plugins require('nvim-tree').setup{}
 require('lualine').setup{
     options = {
-        theme = 'adwaita'
+        theme = 'dracula-nvim'
     }
 }
 require('nvim-autopairs').setup{} -- Add this line
