@@ -15,7 +15,7 @@ opt.fileencoding = 'utf8'        -- str: File encoding to use
 -- [[ Theme ]]
 opt.syntax = "ON"                -- str: Allow syntax highlighting
 opt.termguicolors = true         -- bool: If terminal supports UI color then enable
-cmd('colorscheme dracula')       -- cmd: set the colorscheme
+cmd('colorscheme onedark')       -- cmd: set the colorscheme
 
 -- [[ Search ]]
 opt.ignorecase = true            -- bool: Ignore case in search pattern
