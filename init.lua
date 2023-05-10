@@ -14,7 +14,7 @@ require('lsp')            -- LSP file
 -- Plugins require('nvim-tree').setup{}
 require('lualine').setup{
     options = {
-        theme = 'onedark'
+        theme = 'catppuccin'
     }
 }
 require('nvim-autopairs').setup{} -- Add this line
