@@ -14,7 +14,7 @@ require('lsp')            -- LSP file
 -- Plugins require('nvim-tree').setup{}
 require('lualine').setup{
     options = {
-        theme = 'catppuccin'
+        theme = 'ayu'
     }
 }
 require('nvim-autopairs').setup{} -- Add this line
@@ -80,6 +80,9 @@ cmp.setup {
 
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
+  view = {
+    width = 20,
+  },
   renderer = {
     group_empty = true,
   },
@@ -87,6 +90,7 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
+
 require("nvim-treesitter.configs").setup {
   -- A list of parser names, or "all" (the five listed parsers should always be installed)
   ensure_installed = { "c", "lua", "vim", "vimdoc", "query" },

@@ -27,6 +27,7 @@ return require('packer').startup(function(use)
     }
     use 'navarasu/onedark.nvim'                        -- Atom One Dark colorscheme
     use 'Mofiqul/adwaita.nvim'                         -- Adwaita colorscheme
+    use 'Shatur/neovim-ayu'                            -- Ayu color scheme
     use { "catppuccin/nvim", as = "catppuccin" }       -- Catppuccin colorscheme
     use 'Mofiqul/dracula.nvim'                         -- colorscheme
     use {
