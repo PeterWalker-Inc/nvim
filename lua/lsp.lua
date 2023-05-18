@@ -47,6 +47,11 @@ require('lspconfig')['tsserver'].setup{
 require('lspconfig')['gopls'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
+    settings = {
+        gopls = {
+            usePlaceholders = true,
+        },
+    },
 }
 require('lspconfig')['rust_analyzer'].setup{
     on_attach = on_attach,
