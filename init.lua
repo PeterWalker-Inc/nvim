@@ -42,10 +42,14 @@ require("ibl").setup({
 	},
 })
 
-vim.cmd("colorscheme onedark")
-vim.cmd([[
-   highlight Normal guibg=none
-   highlight NonText guibg=none
-   highlight Normal ctermbg=none
-   highlight NonText ctermbg=none
-]])
+if vim.lsp.inlay_hint then
+  vim.lsp.inlay_hint.enable(true, { 0 })
+end
+
+vim.cmd("colorscheme default")
+-- vim.cmd([[
+--    highlight Normal guibg=none
+--    highlight NonText guibg=none
+--    highlight Normal ctermbg=none
+--    highlight NonText ctermbg=none
+-- ]])
