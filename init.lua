@@ -24,7 +24,7 @@ require("lazy").setup({
 		border = "double",
 	},
 	install = {
-		colorscheme = { "onedark_dark" },
+		-- colorscheme = { "onedark_dark" },
 	},
 	spec = {
 		{ import = "plugins" },
@@ -42,11 +42,8 @@ require("ibl").setup({
 	},
 })
 
-if vim.lsp.inlay_hint then
-  vim.lsp.inlay_hint.enable(true, { 0 })
-end
 
-vim.cmd("colorscheme default")
+-- vim.cmd("colorscheme catppuccin-mocha")
 -- vim.cmd([[
 --    highlight Normal guibg=none
 --    highlight NonText guibg=none
