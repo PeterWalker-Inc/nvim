@@ -38,9 +38,9 @@ return {
 				capabilities = capabilities,
   				cmd = {'clangd', '--background-index', '--clang-tidy', '--log=verbose'},
 				settings = {
-					["rust-analyzer"] = {
+					clangd = {
 						diagnostics = {
-							enable = true,
+							enable = false,
 						},
 					},
 				},

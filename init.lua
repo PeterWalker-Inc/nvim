@@ -24,26 +24,26 @@ require("lazy").setup({
 		border = "double",
 	},
 	install = {
-		-- colorscheme = { "onedark_dark" },
+		colorscheme = { "onedark_dark" },
 	},
 	spec = {
 		{ import = "plugins" },
 	},
 })
 
-require("ibl").setup({
-	debounce = 100,
-	indent = {
-		char = "┊",
-	},
-	scope = {
-		show_start = false,
-		show_end = false,
-	},
-})
+-- require("ibl").setup({
+-- 	debounce = 100,
+-- 	indent = {
+-- 		char = "┊",
+-- 	},
+-- 	scope = {
+-- 		show_start = false,
+-- 		show_end = false,
+-- 	},
+-- })
 
 
--- vim.cmd("colorscheme catppuccin-mocha")
+vim.cmd("colorscheme catppuccin-latte")
 -- vim.cmd([[
 --    highlight Normal guibg=none
 --    highlight NonText guibg=none
