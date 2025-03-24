@@ -24,7 +24,7 @@ require("lazy").setup({
 		border = "double",
 	},
 	install = {
-		colorscheme = { "onedark_dark" },
+		colorscheme = { "darcula-dark" },
 	},
 	spec = {
 		{ import = "plugins" },
@@ -43,7 +43,7 @@ require("lazy").setup({
 -- })
 
 
-vim.cmd("colorscheme catppuccin-latte")
+vim.cmd("colorscheme onedark")
 -- vim.cmd([[
 --    highlight Normal guibg=none
 --    highlight NonText guibg=none
