@@ -7,10 +7,8 @@ vim.cmd("set laststatus=2")
 vim.cmd("set noshowmode")
 vim.cmd("set linebreak")
 vim.cmd("set showbreak=↪\\ ")
-
 vim.api.nvim_set_hl(0, 'Comment', { italic=true })
 
 -- if vim.lsp.inlay_hint then
 --   vim.lsp.inlay_hint.enable(true, { 0 })
 -- end
-

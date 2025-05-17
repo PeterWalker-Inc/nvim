@@ -42,8 +42,8 @@ require("lazy").setup({
 -- 	},
 -- })
 
-
-vim.cmd("colorscheme onedark")
+vim.opt.scrolloff = 8
+vim.cmd("colorscheme catppuccin-latte")
 -- vim.cmd([[
 --    highlight Normal guibg=none
 --    highlight NonText guibg=none
