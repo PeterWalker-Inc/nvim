@@ -13,7 +13,7 @@ return {
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			local lspconfig = vim.lsp.config
-			lspconfig('lua_ls', {
+			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 				settings = {
 					Lua = {
@@ -26,7 +26,7 @@ return {
 					},
 				},
 			})
-			lspconfig('rust_analyzer', {
+			lspconfig.rust_analyzer.setup({
 				capabilities = capabilities,
 				-- Server-specific settings. See `:help lspconfig-setup`
 				settings = {
@@ -37,7 +37,7 @@ return {
 					},
 				},
 			})
-			lspconfig('clangd', {
+			lspconfig.clangd.setup({
 				capabilities = capabilities,
   				cmd = {'clangd', '--background-index', '--clang-tidy', '--log=verbose'},
 				settings = {
@@ -48,7 +48,7 @@ return {
 					},
 				},
 			})
-			lspconfig('gopls', {
+			lspconfig.gopls.setup({
 				capabilities = capabilities,
 				cmd = {'gopls'},
 				filetypes = { 'go', 'gomod', 'gowork', 'gotmpl' },

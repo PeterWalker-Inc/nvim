@@ -24,7 +24,7 @@ require("lazy").setup({
 		border = "double",
 	},
 	install = {
-		colorscheme = { "darcula-dark" },
+		colorscheme = { "oxocarbon" },
 	},
 	spec = {
 		{ import = "plugins" },
@@ -43,10 +43,13 @@ require("lazy").setup({
 -- })
 
 vim.opt.scrolloff = 8
-vim.cmd("colorscheme catppuccin-latte")
--- vim.cmd([[
---    highlight Normal guibg=none
---    highlight NonText guibg=none
---    highlight Normal ctermbg=none
---    highlight NonText ctermbg=none
--- ]])
+vim.cmd("colorscheme oxocarbon")
+vim.cmd([[
+   highlight Comment cterm=italic
+   highlight Normal guibg=none
+   highlight NonText guibg=none
+   highlight Normal ctermbg=none
+   highlight NonText ctermbg=none
+   hi LineNr ctermbg=NONE
+   hi LineNr guibg=None
+]])
