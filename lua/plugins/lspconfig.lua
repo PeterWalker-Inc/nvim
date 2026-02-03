@@ -43,7 +43,7 @@ return {
 				settings = {
 					clangd = {
 						diagnostics = {
-							enable = false,
+							enable = true,
 						},
 					},
 				},

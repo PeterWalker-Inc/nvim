@@ -24,7 +24,7 @@ require("lazy").setup({
 		border = "double",
 	},
 	install = {
-		colorscheme = { "oxocarbon" },
+		colorscheme = { "torte" },
 	},
 	spec = {
 		{ import = "plugins" },
@@ -43,7 +43,7 @@ require("lazy").setup({
 -- })
 
 vim.opt.scrolloff = 8
-vim.cmd("colorscheme oxocarbon")
+vim.cmd("colorscheme torte")
 vim.cmd([[
    highlight Comment cterm=italic
    highlight Normal guibg=none
