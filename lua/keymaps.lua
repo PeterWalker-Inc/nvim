@@ -1,67 +1,32 @@
-vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left toggle<CR>")
-vim.keymap.set("n", "<leader>e", ":Neotree focus<CR>")
-vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>")
-vim.keymap.set("n", "<leader>th", ":Telescope colorscheme<CR>")
-vim.keymap.set("n", "<leader>ft",  vim.lsp.buf.format, {})
-vim.keymap.set("n", "<tab>", ":BufferLineCycleNext<CR>")
-vim.keymap.set("n", "<S-tab>", ":BufferLineCyclePrev<CR>")
+-- ~/.config/nvim-new/lua/keymaps.lua
+local keymap = vim.keymap.set
+local s = { silent = true }
 
-vim.diagnostic.config({
-  virtual_text = false
-})
-vim.keymap.set("n", "<leader>d", ":lua vim.diagnostic.open_float(0, {scope='line'})<CR>" )
+vim.g.mapleader = " "
 
-vim.keymap.set("n", '<leader>i',
-  function()
-    vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({0}),{0})
-end)
+keymap("n", "<space>", "<Nop>")
 
--- Open compiler
--- vim.api.nvim_set_keymap('n', '<F6>', "<cmd>CompilerOpen<cr>", { noremap = true, silent = true })
---
--- -- Redo last selected option
--- vim.api.nvim_set_keymap('n', '<S-F6>',
---      "<cmd>CompilerStop<cr>" -- (Optional, to dispose all tasks before redo)
---   .. "<cmd>CompilerRedo<cr>",
---  { noremap = true, silent = true })
---
--- -- Toggle compiler results
--- vim.api.nvim_set_keymap('n', '<S-F7>', "<cmd>CompilerToggleResults<cr>", { noremap = true, silent = true })
+keymap("n", "j", function()
+    return tonumber(vim.api.nvim_get_vvar("count")) > 0 and "j" or "gj"
+end, { expr = true, silent = true }) -- Move down, but use 'gj' if no count is given
+keymap("n", "k", function()
+    return tonumber(vim.api.nvim_get_vvar("count")) > 0 and "k" or "gk"
+end, { expr = true, silent = true }) -- Move up, but use 'gk' if no count is given
+keymap("n", "<C-d>", "<C-d>zz") -- Scroll down and center the cursor
+keymap("n", "<C-u>", "<C-u>zz") -- Scroll up and center the cursor
+keymap("n", "<Leader>w", "<cmd>w!<CR>", s) -- Save the current file
+keymap("n", "<Leader>q", "<cmd>q<CR>", s) -- Quit Neovim
+keymap("n", "<Leader>te", "<cmd>tabnew<CR>", s) -- Open a new tab
+keymap("n", "<Leader>_", "<cmd>vsplit<CR>", s) -- Split the window vertically
+keymap("n", "<Leader>-", "<cmd>split<CR>", s) -- Split the window horizontally
+keymap("n", "<Leader>fo", ":lua vim.lsp.buf.format()<CR>", s) -- Format the current buffer using LSP
+keymap("v", "<Leader>p", '"_dP') -- Paste without overwriting the default register
+keymap("x", "y", [["+y]], s) -- Yank to the system clipboard in visual mode
+keymap("t", "<Esc>", "<C-\\><C-N>") -- Exit terminal mode
+-- Change directory to the current file's directory
+keymap("n", "<leader>cd", '<cmd>lua vim.fn.chdir(vim.fn.expand("%:p:h"))<CR>')
 
--- vim.o.updatetime = 250
--- vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
+local opts = { noremap = true, silent = true }
+keymap("n", "grd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts) -- Go to definition
 
--- Diagnostic Toggle
--- Command to toggle inline diagnostics
--- vim.api.nvim_create_user_command(
---   'DiagnosticsToggleVirtualText',
---   function()
---     local current_value = vim.diagnostic.config().virtual_text
---     if current_value then
---       vim.diagnostic.config({virtual_text = false})
---     else
---       vim.diagnostic.config({virtual_text = true})
---     end
---   end,
---   {}
--- )
---
--- Command to toggle diagnostics
--- vim.api.nvim_create_user_command(
---   'DiagnosticsToggle',
---   function()
---     local current_value = vim.diagnostic.is_disabled()
---     if current_value then
---       vim.diagnostic.enable()
---     else
---       vim.diagnostic.disable()
---     end
---   end,
---   {}
--- )
-
--- Keybinding to toggle inline diagnostics (ii)
---vim.api.nvim_set_keymap('n', '<Leader>ii', ':lua vim.cmd("DiagnosticsToggleVirtualText")<CR>', { noremap = true, silent = true })
-
--- Keybinding to toggle diagnostics (id)
--- vim.api.nvim_set_keymap('n', '<Leader>id', ':lua vim.cmd("DiagnosticsToggle")<CR>', { noremap = true, silent = true })
+keymap("n", "<leader>ps", '<cmd>lua vim.pack.update()<CR>') -- plugins update
