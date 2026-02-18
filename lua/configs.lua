@@ -1,6 +1,5 @@
 -- ~/.config/nvim-new/lua/configs.lua
 local opt = vim.opt
-opt.guicursor = "i:block" -- Use block cursor in insert mode
 opt.colorcolumn = "80" -- Highlight column 80
 opt.signcolumn = "yes:1" -- Always show sign column
 opt.termguicolors = true -- Enable true colors
@@ -12,7 +11,7 @@ opt.tabstop = 4 -- Number of spaces for a tab
 opt.softtabstop = 4 -- Number of spaces for a tab when editing
 opt.shiftwidth = 4 -- Number of spaces for autoindent
 opt.shiftround = true -- Round indent to multiple of shiftwidth
--- opt.listchars = "tab: ,multispace:|   ,eol:󰌑" -- Characters to show for tabs, spaces, and end of line
+opt.listchars = "tab: ,multispace:|   ,eol:󰌑" -- Characters to show for tabs, spaces, and end of line
 opt.list = true -- Show whitespace characters
 opt.number = true -- Show line numbers
 opt.relativenumber = true -- Show relative line numbers
@@ -28,4 +27,9 @@ opt.winborder = "rounded" -- Use rounded borders for windows
 opt.hlsearch = false -- Disable highlighting of search results
 
 vim.cmd.filetype("plugin indent on") -- Enable filetype detection, plugins, and indentation
-
+vim.cmd[[colorscheme habamax]]
+vim.cmd[[
+  hi Normal ctermbg=NONE
+  hi NonText ctermbg=NONE
+  hi Normal guibg=NONE
+]]

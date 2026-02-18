@@ -3,11 +3,9 @@ vim.pack.add({
     { src = "https://github.com/mason-org/mason.nvim" },
     { src = "https://github.com/lewis6991/gitsigns.nvim" },
     { src = "https://github.com/saghen/blink.cmp", version = vim.version.range("^1") },
-    {src = "https://github.com/folke/tokyonight.nvim" },
 })
-vim.cmd[[colorscheme tokyonight]]
 require("mason").setup({})
-require('gitsigns').setup({ signcolumn = false })
+require('gitsigns').setup({ signcolumn = true })
 require('blink.cmp').setup({
     fuzzy = { implementation = 'prefer_rust_with_warning' },
     signature = { enabled = true },
