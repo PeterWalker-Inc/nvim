@@ -6,6 +6,7 @@ vim.pack.add({
     { src = "https://github.com/saghen/blink.cmp", version = vim.version.range("^1") },
     { src = "https://github.com/olimorris/onedarkpro.nvim" },
     { src = "https://github.com/catppuccin/nvim", name = "catppuccin" },
+    { src = "https://github.com/nyoom-engineering/oxocarbon.nvim"},
 })
 require("mason").setup({})
 require("gitsigns").setup({ signcolumn = true })

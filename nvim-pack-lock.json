@@ -33,6 +33,10 @@
       "rev": "dab7b623d48b50330c43234958c0ba2de9b501d5",
       "src": "https://github.com/olimorris/onedarkpro.nvim"
     },
+    "oxocarbon.nvim": {
+      "rev": "a7ba74849a00546a311f8c146320b433900393e7",
+      "src": "https://github.com/nyoom-engineering/oxocarbon.nvim"
+    },
     "tokyonight.nvim": {
       "rev": "5da1b76e64daf4c5d410f06bcb6b9cb640da7dfd",
       "src": "https://github.com/folke/tokyonight.nvim"

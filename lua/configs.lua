@@ -28,7 +28,7 @@ opt.winborder = "rounded" -- Use rounded borders for windows
 opt.hlsearch = false -- Disable highlighting of search results
 
 vim.cmd.filetype("plugin indent on") -- Enable filetype detection, plugins, and indentation
-vim.cmd[[colorscheme catppuccin-nvim]]
+vim.cmd[[colorscheme oxocarbon]]
 vim.cmd[[
   hi Normal ctermbg=NONE
   hi NonText ctermbg=NONE
