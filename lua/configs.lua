@@ -1,4 +1,5 @@
 -- ~/.config/nvim-new/lua/configs.lua
+--
 local opt = vim.opt
 
 -- opt.colorcolumn = "80" -- Highlight column 80
@@ -30,17 +31,10 @@ opt.hlsearch = false -- Disable highlighting of search results
 -- vim.opt.guicursor = "n-v-c:ver25,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175"
 vim.cmd.filetype("plugin indent on") -- Enable filetype detection, plugins, and indentation
 opt.clipboard = "unnamedplus"
--- function MyStatusLine()
---   local encoding = (vim.bo.fenc ~= '' and vim.bo.fenc) or vim.o.enc
---   return string.format(" %%#PmenuSel#%%#LineNr# %%f%%m%%=%%#CursorColumn# %%y [%s][%s] %%p%%%% %%l:%%c", 
---     encoding, vim.bo.fileformat)
--- end
--- vim.o.statusline = "%!v:lua.MyStatusLine()"
-
 vim.cmd[[colorscheme oxocarbon]]
--- vim.cmd[[
---   hi Normal ctermbg=NONE guibg=NONE
---   hi NonText ctermbg=NONE
---   highlight LineNr ctermbg=NONE guibg=NONE
---   hi SignColumn ctermbg=NONE guibg=NONE
--- ]]
+vim.cmd[[
+  hi Normal ctermbg=NONE guibg=NONE
+  hi NonText ctermbg=NONE
+  highlight LineNr ctermbg=NONE guibg=NONE
+  hi SignColumn ctermbg=NONE guibg=NONE
+]]
